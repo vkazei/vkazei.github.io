@@ -1,22 +1,34 @@
----
-title: "Install Keras with Tensorflow backend and GPU support in Anaconda"
-excerpt: "Step-by-step manual"
+# Install cuda and tensorflow-gpu 
+
 tags:
   - Tensorflow
   - Keras
   - GPU
   - Anaconda
----
-modified from Oleg Ovcharenko ovharenkoo.com
 
-1. Install Nvidia driver
-2. Install Cuda
-3. ?Install cuDNN?
-4. Install Anaconda
-5. Open terminal and type one-by-one the following commands
+
+## Install Nvidia driver
+find the latest driver for your gpu
+--no-x-check can sometimes help you to succeed
+## Install Cuda
+don't let it install the driver
+don't install cuda 10.1 -- it is NOT supported by tensorflow
+## Install Anaconda
+
+## Install tensorflow
 ```
 conda create -n tfk python=3.6 pip spyder
 conda install -n tfk tensorflow-gpu
+```
+python 3.7 is not supported
+check tensorflow
+```
+python
+import tensorflow as tf
+```
+
+## Install keras
+```
 conda install -n tfk -c conda-forge keras-gpu
 ```
 
@@ -27,4 +39,4 @@ source activate tfk
 spyder . &
 ```
 
-Done.
+(c) Vladimir Kazei, KAUST 10-Apr-2019
