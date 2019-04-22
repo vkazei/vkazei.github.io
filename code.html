@@ -1,0 +1,155 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+
+<html>
+
+<head>
+  <meta name="description" content="Vladimir Kazei's home" />
+  <meta name="keywords"
+    content="Vladimir Kazei, Kazei, anisotropy, machine learning, inverse problems, seismic, geophysics, KAUST, SWAG, MedSeis" />
+  <meta name="author" content="Vladimir Kazei" />
+
+  <title>Vladimir Kazei</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/gif/png" href="img/patternICO.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+</head>
+
+<body id="teaching"></body>
+<div id="wrap">
+
+  <div id="header">
+    <h1 class="name">Vladimir Kazei </h1>
+  </div>
+  <div id="nav">
+    <ul>
+      <li><a href="./index.html" class="active">home</a></li>
+      <li><a href="https://scholar.google.com/citations?user=Z-trF_4AAAAJ&hl=en">papers</a></li>
+      <li><a href="./code.html">code</a></li>
+      <li><a href="https://www.medseis.com/">MedSeis</a></li>
+      <li><a href="./CV_Latex/VladimirCV.pdf">CV</a></li>
+    </ul>
+  </div>
+  <hr />
+  <div id="guts">
+
+    <div id="content">
+      <div id="content-inner">
+        <h2 class="title"> Seismic Anisotropy </h2>
+        <br>
+
+        <div class="wrapper">
+            <dl class="img">
+                <dt>
+                  <img class="img" src="img/PSHCij.png" width="400" />
+                  <h3 class="subtitle"> <a href="https://github.com/vkazei/ScatteringAtlas">Scattering Atlas</a> </h3>
+                <dd>
+                  <p>
+                    maps scattering radiation patterns by anisotropic parameters into the wavenumber domain.
+                    Which reveals scattering features in arbitrary parametrization of orthorhombic media.
+                    Arbitrary parameterization can be easily investigated by just entering expressions for mapping it
+                    into standard stiffness matrix -- density parameterization.
+                  </p>
+                  <p>  
+                    <h4>Scattering Atlas is also a reproducible paper by itself:
+                     <a href="https://doi.org/10.1029/2018JB016687">  
+                    What anisotropic elastic properties can body waves resolve? Vladimir Kazei & Tariq Alkhalifah, 
+                    2019 Journal of Geophysical Research - Solid Earth </a> </h4>
+                  </p>
+                <dd>
+                  </dt>
+                  <br>
+          <dl class="img">
+            <dt>
+              <img class="img first" src="img/ASOFI_gamma2_SH.jpg" width="400" />
+              <h3 class="title"> <a href="https://github.com/swag-kaust/ASOFI3D">ASOFI3D</a> </h3>
+            <dd>
+              <p>
+                Modeling in 3D elastic anisotropic media with up to orthorhombic complexity.
+                <a href="https://github.com/swag-kaust/ASOFI3D">ASOFI3D</a> </h3> stands for Anisotropic Seismic
+                mOdeling with FInite differences in 3D.
+                This code is intended for modeling of seismic wave propagation and
+                is based on
+                <a href="https://git.scc.kit.edu/GPIAG-Software/SOFI3D/wikis/home">SOFI3D</a> code
+                with the addition of orthorhombic anisotropy.
+                Orthorhombic anisotropy with symmetry planes aligned with coordinate planes does not need extra
+                computations comparatively to standard isotropic media.
+                Apart from adding anisotropy we updated compilation, visualization, postprocessing (merging multidomain
+                snapshots).
+                Finally, automated continuous integration was added with a set of tests for further development.
+              </p>
+            </dd>
+            </dt>
+
+            
+
+                <h2 class="title"> Full-waveform inversion (FWI) </h2>
+                <br>
+
+                <dl class="img">
+                  <dt>
+                    <img class="img" src="img/helmholtz.png" width="600" />
+                    <h3 class="subtitle"> <a href="https://github.com/vkazei/fastHelmholtz">Fast Helmholtz</a> </h3>
+                  <dd>
+                    <p>
+                      2D Helmholtz solver with 1st and 2nd order Clayton-Enquist boundary conditions.
+                      Bounded matrix solver accelerates FWI in long and shallow models.
+                    </p>
+                  <dd>
+                    </dt>
+                    <h2 class="title"> Deep learning </h2>
+                    <br>
+                    coming soon
+        </div>
+
+
+
+        <hr />
+
+      </div>
+    </div>
+
+    <div id="sidebar">
+
+      <h3>Contact</h3>
+      <a href="mailto:vladimir.kazei@kaust.edu.sa">vladimir.kazei@kaust.edu.sa</a>
+      
+      <h3>Social links</h3>
+      <ul>
+        <li><a href="https://github.com/vkazei">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/vladimir-kazei-053b0341">Linkedin</a></li>
+      </ul>
+      <h3>References</h3>
+      <ul>
+        <li><a
+            href="https://www.princeton.edu/geosciences/people/display_person.xml?netid=fjsimons&display=All">Frederik
+            Simons</a></li>
+
+        <li><a
+            href="https://www.tudelft.nl/en/ceg/about-faculty/departments/geoscience-engineering/sections/applied-geophysics-petrophysics/staff/academic-staff/mulder-wa//">Wim
+            Mulder</a></li>
+        <li><a href="https://sites.google.com/a/kaust.edu.sa/tariq/">Tariq Alkhalifah</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <hr />
+
+  <div id="footer">
+    <p>
+      Copyright &copy; 2018 Vladimir Kazei design by
+      <a href="http://inside.mines.edu/~dhale/index.html">Dave Hale</a> <br />
+    </p>
+  </div>
+
+</div>
+
+
+</body>
+
+</html>
